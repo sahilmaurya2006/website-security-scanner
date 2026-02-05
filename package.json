@@ -1,0 +1,22 @@
+{
+  "name": "website-security-scanner",
+  "version": "1.0.0",
+  "description": "Professional website security analysis tool",
+  "main": "server/index.js",
+  "scripts": {
+    "dev": "npm run backend & npm run frontend",
+    "backend": "cd server && npm start",
+    "frontend": "cd client && npm start",
+    "install-all": "npm install && cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": [
+    "security",
+    "scanner",
+    "cybersecurity",
+    "full-stack",
+    "react",
+    "node"
+  ],
+  "author": "Your Name",
+  "license": "MIT"
+}
