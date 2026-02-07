@@ -8,6 +8,7 @@
  * - Scan metadata (response time, status code)
  * - PDF download option
  */
+const API_URL = process.env.REACT_APP_API_URL;
 
 import React from "react";
 
@@ -42,7 +43,7 @@ function Results({ scanResult }) {
 
   const handleDownloadPDF = async () => {
     try {
-      const response = await fetch(`http://localhost:5000/report/${id}/pdf`);
+      const response = await fetch(`${API_URL}/report/${id}/pdf`);
       if (!response.ok) throw new Error("Failed to download PDF");
       const blob = await response.blob();
       const urlObj = window.URL.createObjectURL(blob);

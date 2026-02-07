@@ -15,7 +15,8 @@ import Results from "./components/Results";
 import History from "./components/History";
 import "./App.css";
 
-const API_BASE_URL = "http://localhost:5000";
+const API_BASE_URL = process.env.REACT_APP_API_URL;
+
 
 function App() {
   // ─────────────────────────────────────────────────────────────────
