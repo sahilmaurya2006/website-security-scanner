@@ -8,9 +8,11 @@
  * - Scan metadata (response time, status code)
  * - PDF download option
  */
-const API_URL = process.env.REACT_APP_API_URL;
+
 
 import React from "react";
+
+const API_URL = process.env.REACT_APP_API_URL;
 
 function Results({ scanResult }) {
   if (!scanResult) return null;
